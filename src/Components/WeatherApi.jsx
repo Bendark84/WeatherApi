@@ -20,7 +20,7 @@ const WeatherApi = () => {
   useEffect(() => {
     setTemperature(Math.round(data.main?.temp - 273.15));
     setIsTemp(istemp);
-  }, []);
+  }, [data]);
 
   const convertTemp = () => {
 
